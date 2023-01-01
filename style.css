@@ -1,0 +1,84 @@
+@keyframes appear {
+    from {
+      /* pushes the sun down past the viewport */
+      opacity: 0%;
+    }
+    to {
+      /* returns the sun to its default position */
+      opacity: 100%;;
+    }
+  }
+  body {
+    font-family: 'Montserrat';
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input {
+    font-family: 'Montserrat';
+    border: none;  
+    border-bottom: 3px solid rgba(163, 163, 163, 0.6);
+    outline: none;
+    padding-bottom: 10px;
+
+}
+.submit {
+    font-family: 'Montserrat';
+    border: none;
+    background-color: rgb(233, 233, 233);
+    /* box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001; */
+    width: 80px;
+    height: 50px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    padding: 0;
+}
+li {
+    animation: appear 0.3s ease-in-out;
+    background-color: rgb(233, 233, 233);
+    /* box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001; */
+    padding: 20px 50px;
+    margin: 10px;
+    list-style: none;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.input-active {
+    width: 300px;
+    padding: 20px 20px;
+}
+.delete-btn {
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: end;
+}
+.delete-btn:hover {
+    color:rgba(0, 0, 0, 0.15);
+}
